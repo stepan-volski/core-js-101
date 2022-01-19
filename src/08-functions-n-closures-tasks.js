@@ -78,17 +78,18 @@ function getPolynom() {
  *   ...
  *   memoizer() => the same random number  (next run, returns the previous cached result)
  */
-function memoize(func) {
-  let isCacheReady = 'false';
-  let cachedResult;
+function memoize(/* func */) {
+  // let isCacheReady = 'false';
+  // let cachedResult;
 
-  return () => {
-    if (isCacheReady) {
-      return cachedResult;
-    }
-    isCacheReady = 'true';
-    return func();
-  };
+  // return () => {
+  //   if (isCacheReady) {
+  //     return cachedResult;
+  //   }
+  //   isCacheReady = 'true';
+  //   return func();
+  // };
+  throw new Error('Not implemented');
 }
 
 /**
